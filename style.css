@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#FF9933,#FFFFFF,#138808);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+header{
+    background:#000080;
+    color:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+header{
+    position:relative;
+}
+header h1{
+    font-size:28px;
+    margin-top:5px;
+}
+
+header p{
+    margin-top:5px;
+    font-size:16px;
+}
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:.3s;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#FF9933;
+    color:#000080;
+}
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#333;
+    max-width:850px;
+    margin:0 auto 30px;
+    line-height:1.7;
+}
+@media (max-width:768px){
+
+.hero h2{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+#search{
+    width:400px;
+    max-width:90%;
+    padding:15px;
+    font-size:18px;
+    border-radius:30px;
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+#search:focus{
+    outline:none;
+    border:2px solid #FF9933;
+}
+button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#000080;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#FF9933;
+    transform:scale(1.05);
+}
+#map{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#map h2{
+    font-size:40px;
+    color:#000080;
+    margin-bottom:30px;
+}
+
+#indiaMapContainer{
+    width:90%;
+    max-width:900px;
+    height:600px;
+    margin:auto;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#indiaMapContainer p{
+    font-size:24px;
+    color:#666;
+}
+#states{
+    padding:60px 20px;
+}
+
+#states h2{
+    text-align:center;
+    font-size:40px;
+    color:#000080;
+    margin-bottom:30px;
+}
+
+#stateContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:.3s;
+    border-top:5px solid #FF9933;
+}
+.card{
+    min-height:220px;
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#ff6600;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin:8px 0;
+}
+.dashboard{
+padding:60px 20px;
+text-align:center;
+}
+
+.dashboard h2{
+font-size:40px;
+color:#000080;
+margin-bottom:40px;
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.dashboard-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.dashboard-card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.dashboard-card h3{
+
+font-size:45px;
+
+color:#ff6600;
+
+}
+
+.dashboard-card p{
+
+font-size:20px;
+
+margin-top:10px;
+
+}
+#datetime{
+    margin-top:10px;
+    font-size:16px;
+    font-weight:bold;
+    color:#FFD700;
+}
+footer{
+    background:#000080;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+}
+
+footer h2{
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer hr{
+    width:200px;
+    margin:20px auto;
+}
+.logo{
+    width:70px;
+    height:70px;
+    display:block;
+    margin:0 auto 10px;
+}
+
+#indiaMap{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+nav{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.profile {
+position:absolute;
+top:12px;
+left:18px;
+z-index:999;
+}
+
+.profile img {
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #fff;
+box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
