@@ -23,7 +23,7 @@ function displayStates(list) {
 
 displayStates(states);
 
-search.addEventListener("keyup", function () {
+search.addEventListener("input", function () {
 
     const value = search.value.toLowerCase();
 
@@ -50,7 +50,17 @@ updateDateTime();
 const exploreBtn = document.querySelector("button");
 
 exploreBtn.addEventListener("click", () => {
+
+    const value = search.value.trim().toLowerCase();
+
+    const filtered = states.filter(state =>
+        state.name.toLowerCase().includes(value)
+    );
+
+    displayStates(filtered);
+
     document.getElementById("states").scrollIntoView({
         behavior: "smooth"
     });
+
 });
